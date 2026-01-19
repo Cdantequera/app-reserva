@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.react-calendar { 
+    background-color: transparent !important;
+    border: none !important;
+    font-family: inherit !important;
+    width: 100% !important;
+}
+.react-calendar__tile {
+    color: white !important;
+    padding: 10px 0 !important;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: #334155 !important;
+    border-radius: 8px;
+}
+.react-calendar__tile--now {
+    background: #f59e0b !important;
+    border-radius: 8px;
+    color: black !important;
+}
+.react-calendar__tile--active {
+    background: #3b82f6 !important;
+    border-radius: 8px;
+    color: white !important;
+}
+.react-calendar__navigation button {
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+/* La clase personalizada para días ocupados */
+.react-calendar__tile.bg-red-900 {
+    background-color: #7f1d1d !important; /* Rojo oscuro */
+    color: #fca5a5 !important; /* Texto rojo claro */
+    border-radius: 8px;
+}
